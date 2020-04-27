@@ -1,3 +1,4 @@
+// level-2
 const users = {
     Alex: {
         email: 'alex@alex.com',
@@ -50,27 +51,16 @@ const users = {
     }
 }
 
-//Find the person who has many skills in the users object.
+let winner;
+let max = 0
 
-let userSkills = Object.values(users);
-let indSkillsLength = [];
-for (let i = 0; i < userSkills.length; i++) {
-    indSkillsLength.push(userSkills[i].skills.length);
-}
-console.log(indSkillsLength);
-let max = indSkillsLength[0]
-for (let i = 0; i < indSkillsLength.length; i++) {
-    if (indSkillsLength[i] > max) {
-        max = indSkillsLength[i]
+for (const property in users) {
+    if (users[property].skills.length > max) {
+        max = users[property].skills.length;
+        winner = property
     }
 }
-console.log(max);
-console.log(userSkills);
-users.name = "victor";
-let keysProperties = Object.entries(users)
-console.log(keysProperties);
-let keys = Object.keys(users);
-console.log(keys);
+console.log(winner);
 
 let country = {
     name: "Nigeria",
