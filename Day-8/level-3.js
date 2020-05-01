@@ -187,7 +187,6 @@ const rateProduct = (name, rate) => {
 const avgRating = (name) => {
     let avg = 0;
     let count = 0;
-    let
     for (let i = 0; i < products.length; i++) {
         if (name.toLowerCase() === products[i].name.toLowerCase()) {
             products[i].ratings.rate.forEach(rating => {
@@ -223,4 +222,4 @@ const likeProduct = (name) => {
 
 rateProduct("tv", "4.5");
 avgRating("mobile phone");
-likeProduct("laptop")
+likeProduct("mobile phone");
