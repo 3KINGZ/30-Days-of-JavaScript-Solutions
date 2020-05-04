@@ -19,7 +19,7 @@ class Animal {
 let dog = new Animal("jack", 4, "brown", 4);
 let cat = new Animal("brie", 2, "white", 4);
 
-console.log(dog);
+console.log(dog.getfullInfo());
 console.log(cat);
 
 class Pet extends Animal {
@@ -31,7 +31,11 @@ class Pet extends Animal {
     get getGender() {
         return this.gender
     }
+    getfullInfo() {
+        return `${this.name} is ${this.age} year(s) old ${this.gender} ${this.color} in color`;
+    }
+
 }
 
 let rabbit = new Pet("ross", 3, "snow-white", 4, "male")
-console.log(rabbit);
+console.log(rabbit.getfullInfo());
