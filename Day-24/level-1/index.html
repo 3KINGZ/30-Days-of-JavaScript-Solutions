@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: url(images/galaxy.gif);
+        text-align: center;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color:gray;
+    }
+    input{
+        border-radius: 3px;
+    }
+    select{
+        text-transform: capitalize;
+    }
+    button{
+        border-radius: 3px;
+        background-color: gray;
+    }
+    .container{
+        display: flex;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    /* .container-border{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    } */
+    .big{
+        font-size: 50px;
+        color:gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>Calculate the weight of an object on a planet</h1>
+    <div>
+        <input type="text">
+        <select>
+            <option value="mercury">mercury</option>
+            <option value="venus">venus</option>
+            <option value="earth">earth</option>
+            <option value="mars">mars</option>
+            <option value="jupiter">jupiter</option>
+            <option value="saturn">saturn</option>
+            <option value="uranus">uranus</option>
+            <option value="neptune">neptune</option>
+            <option value="pluto">pluto</option>
+        </select>
+        <button>Calculate weight</button>
+    </div>
+    <div class="container container-border">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
