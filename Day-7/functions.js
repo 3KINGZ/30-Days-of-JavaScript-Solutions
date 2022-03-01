@@ -223,7 +223,29 @@ generateRandomIp = () => {
 }
 generateRandomIp();
 
-generateRandomMacAdd = () => {}
+generateRandomMacAdd = () =>{
+    let macAsset = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f']
+    
+       
+       let one1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let one2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let two1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let two2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let three1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let three2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let four1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let four2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let five1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let five2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let six1 = macAsset[Math.floor(Math.random()*macAsset.length)]
+       let six2 = macAsset[Math.floor(Math.random()*macAsset.length)]
+
+
+
+       return`${one1}${one2}-${two1}${two2}-${three1}${three2}-${four1}${four2}-${five1}${five2}-${six1}${six2}`
+   
+}
+console.log(generateRandomMacAdd())
 
 generateRandomHex = () => {
     let chars = "0123456789ABCDEF";
